@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.GetMapping
 class CaosController {
     @GetMapping("/hello")
     fun getHello(): ResponseEntity<String> {
-        return ResponseEntity.ok("Hello World");
+        return ResponseEntity.ok("{\"hello\":\"world\"}")
     }
 }
