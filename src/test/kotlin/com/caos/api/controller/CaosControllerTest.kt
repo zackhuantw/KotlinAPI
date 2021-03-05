@@ -15,11 +15,6 @@ internal class CaosControllerTest {
     private lateinit var mockMvc: MockMvc
 
     @Test
-    fun `canary test`() {
-        assert(true)
-    }
-
-    @Test
     fun `return hello world as JSON`() {
         mockMvc.perform(MockMvcRequestBuilders.get("/hello"))
                 .andExpect(status().isOk)
